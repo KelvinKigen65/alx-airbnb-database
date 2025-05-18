@@ -1,4 +1,4 @@
-
+EXPLAIN ANALYZE
 SELECT b.id AS booking_id, b.check_in, b.check_out,
        u.username, p.name AS property_name, pay.amount
 FROM bookings b
