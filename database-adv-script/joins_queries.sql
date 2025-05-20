@@ -8,6 +8,12 @@ SELECT properties.property_id, properties.name, reviews.review_id, reviews.comme
 FROM properties
 LEFT JOIN reviews ON properties.property_id = reviews.property_id;
 
+SELECT users.user_id, users.name, bookings.booking_id, bookings.property_id, bookings.date
+FROM bookings
+RIGHT JOIN users ON bookings.user_id = users.user_id;
+
+
+
 
 SELECT users.user_id, users.name, bookings.booking_id, bookings.property_id, bookings.date
 FROM users
